@@ -12,8 +12,6 @@ import mintTeaImg from './assets/menu/mint_tea.jpg';
 import tiramisuImg from './assets/menu/tiramisu.jpg';
 import cheesecakeImg from './assets/menu/cheeseecake.webp';
 import brownieImg from './assets/menu/brownie.webp';
-import dessertIcon from './assets/stickers/drink.png';
-
 // Shop Images
 import ethiopiaImg from './assets/shop/coffee-bag-with-roasted-beans.jpg';
 import brazilImg from './assets/shop/coffee-bag-mockup-with-beans-cloth.jpg';
@@ -22,121 +20,113 @@ import kenyaImg from './assets/shop/black-coffee-bag-mockup-isolated.jpg';
 
 export const menuData = {
   coffee: [
-    { 
+    {
       slug: 'espresso',
-      name: 'Espresso', 
-      price: '10 RON', 
-      desc: 'Cafea intensă și aromată extrasă la presiune înaltă.', 
+      name: 'Espresso',
+      price: '10 RON',
+      desc: 'Cafea intensă și aromată extrasă la presiune înaltă.',
       img: espressoImg,
       longDesc: 'Espresso-ul nostru este fundamentul tuturor băuturilor noastre. Folosim un amestec select de boabe 100% Arabica, prăjite mediu pentru a evidenția notele de ciocolată neagră și nuci. Fiecare extracție este monitorizată cu precizie pentru a asigura echilibrul perfect între aciditate, amăreală și dulceață.'
     },
-    { 
+    {
       slug: 'cappuccino',
-      name: 'Cappuccino', 
-      price: '14 RON', 
-      desc: 'Espresso echilibrat cu lapte cremos și spumă fină.', 
+      name: 'Cappuccino',
+      price: '14 RON',
+      desc: 'Espresso echilibrat cu lapte cremos și spumă fină.',
       img: cappuccinoImg,
       longDesc: 'Cappuccino-ul Camara este o simfonie a texturilor. Începem cu un espresso bogat, peste care turnăm lapte proaspăt, spumat la temperatura ideală pentru a crea o micro-spumă densă și catifelată. Rezultatul este o băutură cremoasă, cu un gust dulceag natural datorită lactozei din laptele perfect preparat.'
     },
-    { 
+    {
       slug: 'flat-white',
-      name: 'Flat White', 
-      price: '16 RON', 
-      desc: 'Dublu espresso cu lapte catifelat.', 
+      name: 'Flat White',
+      price: '16 RON',
+      desc: 'Dublu espresso cu lapte catifelat.',
       img: flatWhiteImg,
       longDesc: 'Pentru cei care doresc un gust mai intens de cafea, Flat White-ul este alegerea ideală. Două doze de espresso scurt (ristretto) sunt combinate cu un strat subțire de lapte fin, oferind o experiență robustă dar fină în același timp.'
     },
-    { 
+    {
       slug: 'latte-macchiato',
-      name: 'Latte Macchiato', 
-      price: '15 RON', 
-      desc: 'Trei straturi: lapte, espresso și spumă.', 
+      name: 'Latte Macchiato',
+      price: '15 RON',
+      desc: 'Trei straturi: lapte, espresso și spumă.',
       img: latteImg,
       longDesc: 'O băutură vizuală și delicioasă. Stratul generos de lapte cald primește un "semn" (macchia) de espresso, fiind completat de o spumă aerată la suprafață. Este băutura perfectă pentru cei care preferă o cafea mai lungă și mai lăptoasă.'
     },
-    { 
+    {
       slug: 'v60',
-      name: 'V60 Pour Over', 
-      price: '18 RON', 
-      desc: 'Cafea de specialitate preparată manual.', 
+      name: 'V60 Pour Over',
+      price: '18 RON',
+      desc: 'Cafea de specialitate preparată manual.',
       img: v60Img,
       longDesc: 'Metoda V60 pune în valoare cele mai fine nuanțe ale cafelei de specialitate. Prin turnarea manuală a apei peste cafeaua proaspăt măcinată într-un filtru de hârtie, obținem o ceașcă de cafea clară, curată, care evidențiază aromele florale sau fructate ale originii respective.'
     },
-    { 
+    {
       slug: 'cold-brew',
-      name: 'Cold Brew', 
-      price: '17 RON', 
-      desc: 'Cafea extrasă la rece timp de 12 ore.', 
+      name: 'Cold Brew',
+      price: '17 RON',
+      desc: 'Cafea extrasă la rece timp de 12 ore.',
       img: coldBrewImg,
       longDesc: 'Răbdarea este ingredientul principal. Cafeaua este extrasă cu apă rece pe parcursul a 12-14 ore, rezultând o băutură cu aciditate foarte scăzută, natural dulceagă și extrem de revigorantă, perfectă pentru zilele călduroase.'
     },
   ],
   teas: [
-    { 
+    {
       slug: 'green-tea',
-      name: 'Ceai Verde Sencha', 
-      price: '12 RON', 
-      desc: 'Ceai japonez tradițional cu note proaspete.', 
+      name: 'Ceai Verde Sencha',
+      price: '12 RON',
+      desc: 'Ceai japonez tradițional cu note proaspete.',
       img: greenTeaImg,
       longDesc: 'Sencha este cel mai popular ceai din Japonia. Infuzia noastră oferă un gust proaspăt, ușor ierbos și o culoare galben-verzuie vibrantă. Este bogat în antioxidanți și oferă o energie calmă și susținută.'
     },
-    { 
+    {
       slug: 'black-tea',
-      name: 'Ceai Negru Earl Grey', 
-      price: '12 RON', 
-      desc: 'Ceai negru clasic infuzat cu ulei de bergamotă.', 
+      name: 'Ceai Negru Earl Grey',
+      price: '12 RON',
+      desc: 'Ceai negru clasic infuzat cu ulei de bergamotă.',
       img: blackTeaImg,
       longDesc: 'Un clasic britanic reinterpretat. Ceaiul negru de calitate superioară este armonizat cu aromele citrice ale bergamotei italiene. O băutură sofisticată, ideală pentru după-amiezile relaxante.'
     },
-    { 
+    {
       slug: 'fruit-tea',
-      name: 'Ceai de Fructe', 
-      price: '12 RON', 
-      desc: 'Mix delicios de fructe de pădure și hibiscus.', 
+      name: 'Ceai de Fructe',
+      price: '12 RON',
+      desc: 'Mix delicios de fructe de pădure și hibiscus.',
       img: fruitTeaImg,
       longDesc: 'O explozie de arome naturale. Amestecul nostru conține bucăți întregi de fructe de pădure uscate, măr și flori de hibiscus, oferind o infuzie roșie intensă, natural dulce-acrișoară, excelentă atât caldă cât și rece.'
     },
-    { 
+    {
       slug: 'mint-tea',
-      name: 'Ceai de Mentă', 
-      price: '12 RON', 
-      desc: 'Infuzie răcoritoare din frunze de mentă.', 
+      name: 'Ceai de Mentă',
+      price: '12 RON',
+      desc: 'Infuzie răcoritoare din frunze de mentă.',
       img: mintTeaImg,
       longDesc: 'Simplitatea în cea mai bună formă a ei. Frunze de mentă premium care oferă o infuzie extrem de răcoritoare, digestivă și calmantă. Fără teină, poate fi savurat în orice moment al zilei.'
     },
   ],
   desserts: [
-    { 
+    {
       slug: 'tiramisu',
-      name: 'Tiramisu', 
-      price: '22 RON', 
-      desc: 'Desert clasic italian cu cafea și mascarpone.', 
+      name: 'Tiramisu',
+      price: '22 RON',
+      desc: 'Desert clasic italian cu cafea și mascarpone.',
       img: tiramisuImg,
       longDesc: 'Tiramisu-ul nostru respectă rețeta tradițională, dar cu un twist: folosim propriul nostru espresso proaspăt extras pentru a însiropa pișcoturile. Mascarponele cremos și pudra fină de cacao completează acest desert care "te ridică" (tira mi sù).'
     },
-    { 
+    {
       slug: 'cheesecake',
-      name: 'Cheesecake', 
-      price: '20 RON', 
-      desc: 'Prăjitură fină cu brânză și fructe de sezon.', 
+      name: 'Cheesecake',
+      price: '20 RON',
+      desc: 'Prăjitură fină cu brânză și fructe de sezon.',
       img: cheesecakeImg,
       longDesc: 'O textură fină și densă, pe un blat crocant de biscuiți artizanali. Cheesecake-ul nostru este servit cu un topping generos de fructe proaspete sau coulis de fructe de pădure, pregătit în casă.'
     },
-    { 
+    {
       slug: 'brownie',
-      name: 'Brownie cu Nuci', 
-      price: '18 RON', 
-      desc: 'Prăjitură densă de ciocolată cu nuci crocante.', 
+      name: 'Brownie cu Nuci',
+      price: '18 RON',
+      desc: 'Prăjitură densă de ciocolată cu nuci crocante.',
       img: brownieImg,
       longDesc: 'Iubitorii de ciocolată se vor îndrăgosti de acest brownie. Folosim ciocolată cu 70% cacao pentru un gust intens, păstrând interiorul moale și "fudgy", în contrast cu nucile românești crocante.'
-    },
-    { 
-      slug: 'croissant',
-      name: 'Croissant cu Unt', 
-      price: '10 RON', 
-      desc: 'Pasiune franceză proaspăt coaptă în fiecare dimineață.', 
-      img: dessertIcon,
-      longDesc: 'Croissantele noastre sunt coapte în fiecare dimineață pentru a vă oferi experiența supremă: un exterior crocant, care se desface în mii de foițe, și un interior pufos cu gust intens de unt premium.'
     },
   ],
   products: [
