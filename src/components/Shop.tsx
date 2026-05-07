@@ -75,6 +75,7 @@ const Shop = () => {
                     objectFit: 'cover',
                     transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
                   }}
+                  loading="lazy"
                 />
               </Box>
               <CardContent sx={{ p: 3, flexGrow: 1, display: 'flex', flexDirection: 'column', textAlign: 'center' }}>

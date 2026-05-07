@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { Box } from '@mui/material';
+import { useEffect, lazy, Suspense } from 'react';
+import { Box, CircularProgress } from '@mui/material';
 import Lenis from 'lenis';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
@@ -15,11 +15,17 @@ import Footer from './components/Footer';
 import ReviewsPreview from './components/ReviewsPreview';
 import Shop from './components/Shop';
 
-// Pages
-import Terms from './pages/Terms';
-import Privacy from './pages/Privacy';
-import Reviews from './pages/Reviews';
-import ProductDetail from './pages/ProductDetail';
+// Pages - Lazy Loaded
+const Terms = lazy(() => import('./pages/Terms'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Reviews = lazy(() => import('./pages/Reviews'));
+const ProductDetail = lazy(() => import('./pages/ProductDetail'));
+
+const PageLoader = () => (
+  <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
+    <CircularProgress />
+  </Box>
+);
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -79,13 +85,15 @@ function App() {
       <ScrollToTop />
       <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/termeni" element={<Terms />} />
-          <Route path="/confidentialitate" element={<Privacy />} />
-          <Route path="/recenzii" element={<Reviews />} />
-          <Route path="/produs/:slug" element={<ProductDetail />} />
-        </Routes>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/termeni" element={<Terms />} />
+            <Route path="/confidentialitate" element={<Privacy />} />
+            <Route path="/recenzii" element={<Reviews />} />
+            <Route path="/produs/:slug" element={<ProductDetail />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </Box>
     </Router>

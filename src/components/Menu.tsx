@@ -120,6 +120,8 @@ const Menu = () => {
                     <img 
                       src={item.img} 
                       alt={item.name} 
+                      loading="lazy"
+                      decoding="async"
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                     />
                     <Box sx={{ 

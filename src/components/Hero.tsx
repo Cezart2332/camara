@@ -19,9 +19,18 @@ const Hero = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         textAlign: 'center',
-        pt: { xs: 12, md: 0 }
+        pt: { xs: 12, md: 0 },
+        bgcolor: '#3E2723' // Fallback color while image loads
       }}
     >
+      {/* Preload Hero Image */}
+      <img 
+        src={heroImg} 
+        alt="" 
+        style={{ display: 'none' }} 
+        fetchPriority="high" 
+        loading="eager" 
+      />
 
       <Container maxWidth="md">
         <motion.div
