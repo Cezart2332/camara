@@ -63,25 +63,56 @@ const Contact = () => {
                   { icon: <HiOutlinePhone size={28} />, title: 'Telefon', detail: '+40 722 000 000' },
                   { icon: <HiOutlineMail size={28} />, title: 'Email', detail: 'salut@camara-coffee.ro' },
                 ].map((item, i) => (
-                  <Stack key={i} direction="row" spacing={3} sx={{ alignItems: 'center', justifyContent: { xs: 'center', lg: 'flex-start' } }}>
-                    <Box sx={{ p: 2, borderRadius: '20px', bgcolor: 'background.default', color: 'primary.main', display: 'flex' }}>
+                  <Stack 
+                    key={i} 
+                    direction="row" 
+                    spacing={{ xs: 2, md: 3 }} 
+                    sx={{ 
+                      alignItems: 'center', 
+                      justifyContent: 'flex-start',
+                      maxWidth: { xs: '320px', sm: '100%' },
+                      mx: { xs: 'auto', lg: 0 }
+                    }}
+                  >
+                    <Box sx={{ 
+                      p: { xs: 1.5, md: 2 }, 
+                      borderRadius: '20px', 
+                      bgcolor: 'background.default', 
+                      color: 'primary.main', 
+                      display: 'flex' 
+                    }}>
                       {item.icon}
                     </Box>
                     <Box>
-                      <Typography variant="h6" sx={{ fontWeight: 800 }}>{item.title}</Typography>
-                      <Typography variant="body1" color="text.secondary" sx={{ fontSize: '1.1rem' }}>{item.detail}</Typography>
+                      <Typography variant="h6" sx={{ fontWeight: 800, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{item.title}</Typography>
+                      <Typography variant="body1" color="text.secondary" sx={{ fontSize: { xs: '0.95rem', md: '1.1rem' } }}>{item.detail}</Typography>
                     </Box>
                   </Stack>
                 ))}
 
-                <Stack direction="row" spacing={3} sx={{ alignItems: 'flex-start', justifyContent: { xs: 'center', lg: 'flex-start' } }}>
-                  <Box sx={{ p: 2, borderRadius: '20px', bgcolor: 'background.default', color: 'primary.main', display: 'flex' }}>
+                <Stack 
+                  direction="row" 
+                  spacing={{ xs: 2, md: 3 }} 
+                  sx={{ 
+                    alignItems: 'flex-start', 
+                    justifyContent: 'flex-start',
+                    maxWidth: { xs: '320px', sm: '100%' },
+                    mx: { xs: 'auto', lg: 0 }
+                  }}
+                >
+                  <Box sx={{ 
+                    p: { xs: 1.5, md: 2 }, 
+                    borderRadius: '20px', 
+                    bgcolor: 'background.default', 
+                    color: 'primary.main', 
+                    display: 'flex' 
+                  }}>
                     <HiOutlineClock size={28} />
                   </Box>
                   <Box>
-                    <Typography variant="h6" sx={{ fontWeight: 800 }}>Program</Typography>
-                    <Typography variant="body1" color="text.secondary" sx={{ fontSize: '1.1rem' }}>Luni - Vineri: 08:00 - 20:00</Typography>
-                    <Typography variant="body1" color="text.secondary" sx={{ fontSize: '1.1rem' }}>Sâmbătă - Duminică: 09:00 - 22:00</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 800, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>Program</Typography>
+                    <Typography variant="body1" color="text.secondary" sx={{ fontSize: { xs: '0.95rem', md: '1.1rem' } }}>Luni - Vineri: 08:00 - 20:00</Typography>
+                    <Typography variant="body1" color="text.secondary" sx={{ fontSize: { xs: '0.95rem', md: '1.1rem' } }}>Sâmbătă - Duminică: 09:00 - 22:00</Typography>
                   </Box>
                 </Stack>
               </Stack>
