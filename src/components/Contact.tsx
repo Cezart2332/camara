@@ -59,7 +59,7 @@ const Contact = () => {
               
               <Stack spacing={4}>
                 {[
-                  { icon: <HiOutlineLocationMarker size={28} />, title: 'Locație', detail: 'Strada Principală nr. 12, Oraș, România' },
+                  { icon: <HiOutlineLocationMarker size={28} />, title: 'Locație', detail: 'Piața Romană, București, România' },
                   { icon: <HiOutlinePhone size={28} />, title: 'Telefon', detail: '+40 722 000 000' },
                   { icon: <HiOutlineMail size={28} />, title: 'Email', detail: 'salut@camara-coffee.ro' },
                 ].map((item, i) => (
@@ -119,7 +119,7 @@ const Contact = () => {
 
               <Box sx={{ mt: 8, borderRadius: '30px', overflow: 'hidden', height: '300px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', position: 'relative' }}>
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.964952047321!2d23.589886!3d46.7712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDQ2JzE2LjMiTiAyM8KwMzUnMjMuNiJF!5e0!3m2!1sen!2sro!4v1651842918451!5m2!1sen!2sro" 
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m11!1m3!1d3!2d26.097277626335515!3d44.445838015693255!2m2!1f0!2f90!3m2!1i1024!2i768!4f75!3m3!1m2!1s0x40b1ff4e5e4c4e2f%3A0xabd56fc7586c7121!2zUGlhyJthIFJvbWFuxIMsIEJ1Y3VyZciZdGk!4v1778432211177" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

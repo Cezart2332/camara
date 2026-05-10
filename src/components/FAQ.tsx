@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 const faqs = [
   {
     question: "Unde vă aflați exact?",
-    answer: "Ne găsiți pe Strada Principală nr. 12, chiar în inima orașului, lângă Parcul Central."
+    answer: "Ne găsiți în Piața Romană, chiar în inima Bucureștiului."
   },
   {
     question: "Aveți opțiuni de cafea decofeinizată?",

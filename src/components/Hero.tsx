@@ -158,7 +158,7 @@ const Hero = () => {
               </Box>
               <Box sx={{ textAlign: 'left' }}>
                 <Typography variant="subtitle2" sx={{ opacity: 0.8, letterSpacing: 1 }}>LOCAȚIE</Typography>
-                <Typography variant="body1" sx={{ fontWeight: 700 }}>Strada Principală nr. 12, Oraș</Typography>
+                <Typography variant="body1" sx={{ fontWeight: 700 }}>Piața Romană, București</Typography>
               </Box>
             </Stack>
           </motion.div>
